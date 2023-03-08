@@ -95,12 +95,12 @@ public class NumberConverter {
       System.out.println("---------------------------------------------------");
       System.out.println("\n16-bit binary number --> " + number);
       System.out.println("\nEquals: ");
-      System.out.println("\nUnsigned decimal integer --> " + result);
+      System.out.println("\nUnsigned decimal integer --> " + result + "\n");
     }
     
     protected void decimalToBinaryConversion(Long number) {
         if(number > 65535) {
-            System.out.println("\n**ERROR: Input requires more than 16 bits!");
+            System.out.println("\n**ERROR: Input requires more than 16 bits!\n");
         }
         else {
         String result = "";
@@ -121,7 +121,7 @@ public class NumberConverter {
         System.out.println("---------------------------------------------------");
         System.out.println("\nUnsigned decimal integer --> " + num); 
         System.out.println("\nEquals: ");
-        System.out.println("\n16-bit binary number --> " + result);
+        System.out.println("\n16-bit binary number --> " + result + "\n");
         }
     }
     
@@ -191,13 +191,13 @@ public class NumberConverter {
         System.out.println("---------------------------------------------------");
         System.out.println("\n16-bit binary number --> " + number);
         System.out.println("\nEquals: ");
-        System.out.println("\nUnsigned hexadecimal integer --> " + res);
+        System.out.println("\nUnsigned hexadecimal integer --> " + res + "\n");
     } 
     
     protected void hexaDecimalToBinaryConversion(String number) {
         String numS = number;
         if(number.length() > 4) {
-            System.out.println("\n**ERROR: Input requires more than 16 bits!");
+            System.out.println("\n**ERROR: Input requires more than 16 bits!\n");
         }
         else {
             if(number.length() < 4) {
@@ -228,7 +228,7 @@ public class NumberConverter {
         System.out.println("---------------------------------------------------");
         System.out.println("\nUnsigned hexadecimal integer --> " + numS);
         System.out.println("\nEquals: ");
-        System.out.println("\n16-bit binary number --> " + result); 
+        System.out.println("\n16-bit binary number --> " + result + "\n"); 
         }
     }
     
@@ -274,10 +274,10 @@ public class NumberConverter {
             System.out.println("---------------------------------------------------");
             System.out.println("\nSigned decimal integer --> " + number); 
             System.out.println("\nEquals: ");
-            System.out.println("\n16-bit binary 2’s complement signed integer number --> " + sb); 
+            System.out.println("\n16-bit binary 2’s complement signed integer number --> " + sb + "\n"); 
             }
             else {
-                System.out.println("\n**ERROR: Input requires more than 16 bits!");
+                System.out.println("\n**ERROR: Input requires more than 16 bits!\n");
             }
         }
         else {
@@ -299,10 +299,10 @@ public class NumberConverter {
             System.out.println("---------------------------------------------------");
             System.out.println("\nSigned decimal integer --> " + number); 
             System.out.println("\nEquals: ");
-            System.out.println("\n16-bit binary 2’s complement signed integer number --> " + result);  
+            System.out.println("\n16-bit binary 2’s complement signed integer number --> " + result + "\n");  
             }
             else {
-                System.out.println("\n**ERROR: Input requires more than 16 bits!");
+                System.out.println("\n**ERROR: Input requires more than 16 bits!\n");
             }
         }
     }
@@ -323,7 +323,7 @@ public class NumberConverter {
             System.out.println("---------------------------------------------------");
             System.out.println("\n16-bit binary number --> " + number);
             System.out.println("\nEquals: ");
-            System.out.println("\nUnsigned decimal integer --> " + result);
+            System.out.println("\nUnsigned decimal integer --> " + result + "\n");
         }
         else {
             StringBuilder sb = new StringBuilder(number);
@@ -352,12 +352,12 @@ public class NumberConverter {
                 if(sb.charAt(i) == '1') {
                    result += count;
                 }
-                count *= 2;
+               count *= 2;
             }
             System.out.println("---------------------------------------------------");
             System.out.println("\n16-bit binary number --> " + number);
             System.out.println("\nEquals: ");
-            System.out.println("\nUnsigned decimal integer --> -" + result);
+            System.out.println("\nUnsigned decimal integer --> -" + result + "\n");
  
         }
     }

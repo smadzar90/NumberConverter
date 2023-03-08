@@ -40,7 +40,7 @@ public class TestNumberConverter {
                     converter.binaryToDecimalConversion(number);
                 }
                 else {
-                    System.out.println("\nError! 16-bit binary number not entered.");
+                    System.out.println("\nError! 16-bit binary number not entered.\n");
                 }   break;
             case "2":
                 System.out.print("\nEnter an unsigned decimal integer(Ex: 124): ");
@@ -50,7 +50,7 @@ public class TestNumberConverter {
                     converter.decimalToBinaryConversion(longVal);
                 }
                 else {
-                    System.out.println("\nError! Unsigned decimal integer not entered.");
+                    System.out.println("\nError! Unsigned decimal integer not entered.\n");
                 }   break;
             case "3":
                 System.out.print("\nEnter an 16-bit binary number(Ex: 0000000000001101): ");
@@ -59,7 +59,7 @@ public class TestNumberConverter {
                     converter.binaryToHexaDecimalConversion(number);
                 }
                 else {
-                    System.out.println("\nError! 16-bit binary number not entered.");
+                    System.out.println("\nError! 16-bit binary number not entered.\n");
                 }   break;
             case "4":
                 System.out.print("\nEnter an unsigned hexadecimal integer(Ex: F18D): ");
@@ -68,14 +68,14 @@ public class TestNumberConverter {
                     converter.hexaDecimalToBinaryConversion(number);
                 }
                 else {
-                    System.out.println("\nError! Unsigned hexadecimal integer not entered.");
+                    System.out.println("\nError! Unsigned hexadecimal integer not entered.\n");
                 }   break;
             case "5":
                 System.out.print("\nEnter an signed decimal integer(Ex: -15): ");
                 number = scan.nextLine();
                 int len = number.length();
                 if(len == 0) {
-                    System.out.println("\nError! Signed decimal integer not entered.");
+                    System.out.println("\nError! Signed decimal integer not entered.\n");
                 }
                 else if(number.charAt(0) == '-') {
                     String absStr = number.substring(1);
@@ -83,7 +83,7 @@ public class TestNumberConverter {
                         converter.signedDecimalToBinary2compConversion(number);
                     }
                     else {
-                        System.out.println("\nError! Signed decimal integer not entered.");
+                        System.out.println("\nError! Signed decimal integer not entered.\n");
                     }
                 }
                 else {
@@ -91,7 +91,7 @@ public class TestNumberConverter {
                         converter.signedDecimalToBinary2compConversion(number);
                     }
                     else {
-                        System.out.println("\nError! Signed decimal integer not entered.");
+                        System.out.println("\nError! Signed decimal integer not entered.\n");
                     }
                 }   break;  
             case "6":
@@ -101,10 +101,10 @@ public class TestNumberConverter {
                     converter.binary2compToSignedDecimalConversion(number);
                 }
                 else {
-                    System.out.println("\nError! 16-bit binary number not entered.");
+                    System.out.println("\nError! 16-bit binary number not entered.\n");
                 }   break; 
             default:     
-                System.out.println("Error! Option not entered.");
+                System.out.println("\nError! Option not entered.\n");
                 break;
         }
         
